@@ -7,21 +7,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="./js/scripts.js" defer></script>
+  <style>
+    body{
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  </style>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <header>
+    <img src="./assets/shared/logo.svg" alt="logo">
+    <img src="./assets/shared/icon-hamburger.svg" alt="openMenu" onclick="toggleMenu()">
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+    <nav id="navMenu" class="navHeader">
+      <img class="closeBtn" src="/starter-code/assets/shared/icon-close.svg" alt="closeMenu" onclick="toggleMenu()">
+      <ul>
+        <li><a href="./index.html"><span class="spanNav">00</span>Home</a></li>
+        <li><a href="./destination-moon.html"><span class="spanNav">01</span>Destination</a></li>
+        <li><a href="./crew-commander.html"><span class="spanNav">03</span>Crew</a></li>
+        <li><a href="./technology-vehicle.html"><span class="spanNav">04</span>Technology</a></li>
+      </ul>
+    </nav>
+    
+  </header>
 
-  Explore
+  <main class="container">
+    <section class="home">
+      <div class="homeText">
+        <h5>  So, you want to travel to</h5>
+        <h1>Space</h1>
+        <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <a href="/starter-code/destination-moon.html">
+        <button class="exploreBtn">Explore<button>
+      </a>
+    </section> 
+    
+  </main>
 
+  <div class="workInProgress">
+    <h3>Work In Progress Website</h3>
+  </div>
 </body>
 </html>

@@ -7,31 +7,66 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="./js/scripts.js" defer></script>
+  <style>
+    body{
+    background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  </style>
 </head>
 <body>
+  <header>
+    <img src="./assets/shared/logo.svg" alt="logo" onclick="debugMoon()">
+    <img src="./assets/shared/icon-hamburger.svg" alt="openMenu" onclick="toggleMenu()">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <nav id="navMenu" class="navHeader">
+      <img class="closeBtn" src="/starter-code/assets/shared/icon-close.svg" alt="closeMenu" onclick="toggleMenu()">
+      <ul>
+        <li><a href="./index.html"><span class="spanNav">00</span>Home</a></li>
+        <li><a href="./destination-moon.html"><span class="spanNav">01</span>Destination</a></li>
+        <li><a href="./crew-commander.html"><span class="spanNav">03</span>Crew</a></li>
+        <li><a href="./technology-vehicle.html"><span class="spanNav">04</span>Technology</a></li>
+      </ul>
+    </nav>
+    
+  </header>
 
-  01 Pick your destination
+  <main class="container">
+    <section class="destination">
+      <h5><span>01</span> Pick your destination</h5>
+      
+      <nav class="navDestination">
+        <img id="destinationImage" class="in" src="/starter-code/assets/destination/image-moon.png" alt="Moon">
+        <ul>
+          <li><a href="#">Moon</a></li>
+          <li><a href="#">Mars</a></li>
+          <li><a href="#">Titan</a></li>
+          <li><a href="#">Europa</a></li>
+        </ul>
+      </nav>
+      <div class="destinationText">
+        <h1>Moon</h1>
+        <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      </div>
+      <hr>
+      <div class="travelInfo">
+        <div class="distance">
+          <h5>Avg. distance</h5>
+          <h3>384,400 km</h3>
+        </div>
+        <div class="time">
+          <h5>Est. travel time</h5>
+          <h3> 3 days</h3>
+        </div>
+      </div>
+    </section> 
+    
+  </main>
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
 </body>
 </html>
